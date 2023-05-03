@@ -1,0 +1,106 @@
+#personaje{
+    height: 170px;
+    width: 110px;
+    background: url("27-run-legs.png");
+    margin: 0 auto;
+    animation: conejito 0.8s steps(6) infinite;
+    background-position: -10px;
+}
+
+@keyframes conejito {
+    0% {background-position: -10px}
+    100% {background-position: -550px;}
+}
+
+#Johan{
+    background: rgb(47, 224, 255);
+    height: 50px;
+    width: 50px;
+    animation-duration: 1s;
+    animation-name: steel;
+    animation-timing-function: linear;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+#Johan:hover{
+    animation-play-state: paused;
+}
+
+@keyframes steel {
+    0% {left: 0px; top: 0px; border-radius: 50px;}
+    20% {left: 100px; top: 0px; border-radius: 50px;}
+    40% {left: 100px; top: 50px; border-radius: 50px;}
+    60% {left: 100px; top: 100px; border-radius: 50px;}
+    80% {top: 100px; left: 0px; border-radius: 50px;}
+    100% {left: 0px; top: 0px; border-radius: 50px;}
+}
+
+#Items{
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cuadrado{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: animaciongod;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cuadrado:hover{
+    animation-play-state: paused;
+}
+
+@keyframes animaciongod {
+    0% {background-color:gray; transform: translateX(0);}
+    100% { background-color:black; transform: translateX(0) translateY(100%);}
+}
+
+#cuadrado1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: animaciongod1;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.2s;
+}
+
+#cuadrado1:hover{
+    animation-play-state: paused;
+}
+
+@keyframes animaciongod1 {
+    0% {background-color:gray; transform: translateX(0);}
+    100% { background-color:black; transform: translateX(0) translateY(100%);}
+}
+
+#cuadrado2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: animaciongod2;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.3s;
+}
+
+#cuadrado2:hover{
+    animation-play-state: paused;
+}
+
+@keyframes animaciongod2{
+    0% {background-color:gray; transform: translateX(0);}
+    100% { background-color:black; transform: translateX(0) translateY(100%);}
+}

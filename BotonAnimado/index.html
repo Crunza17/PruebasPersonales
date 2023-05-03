@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .boton{
+            position: relative;
+            background: #202231;
+            width: 180px;
+            height: 80px;
+            font-size: 30px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: width .5s,
+            border-radius .5s, margin-left .5s;
+            cursor: pointer;
+        }
+
+        .boton *{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity .25s;
+        }
+
+        .corason{
+            opacity: 0;
+        }
+
+        .textosec{
+            opacity: 0;
+            transition-delay: .1s;
+        }
+
+        .texto{
+            opacity: 1;
+            transition-delay: .1s;
+        }
+
+        .boton:hover .texto{
+            opacity: 0;
+        }
+
+        .boton:hover .textosec{
+            opacity: 1;
+            transition-delay: .1s;
+        }
+
+        .boton:focus{
+            background: #44c08a;
+            border-radius: 50%;
+            width: 80px;
+            margin-left: 50px;
+        }
+
+        .boton:focus .texto{
+            opacity: 0;
+        }
+
+        .boton:focus .corason{
+            opacity: 1;
+            transition-delay: .5s;
+        }
+
+        .boton:focus .textosec{
+            opacity: 0;
+        }
+    </style>
+    <title>Dummie</title>
+</head>
+<body>
+    <button class="boton">
+        <span class="textosec">Seguro?</span>
+        <span class="texto">Ingresar</span>
+        <span class="corason">♦</span>
+    </button>
+</body>
+</html>
